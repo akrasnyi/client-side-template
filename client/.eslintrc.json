@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "standard",
+    "standard-react"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "indent": ["error", 2, { "MemberExpression": 0 }],
+    "no-unused-vars": "warn",
+    "react/prop-types": "warn"
+  }
+}
