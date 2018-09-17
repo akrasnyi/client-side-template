@@ -1,6 +1,6 @@
 # Client-side architecture
 
-## Front-end part of this add-on is SPA, written in:
+## Front-end part of this SPA, written in:
 * React, with use of ES6
 * MobX with its decorators for state management
 * Webpack and Babel to transpile all that into plain JavaScript code.
@@ -18,7 +18,7 @@ And root app component
 Last two reuse many components and only slightly differ.
 
 ## Components
-`App.jsx` is a root level component, which initializes appState as an observable object by MobX means. On it's componentWillMount we do several calls to JIRA service, to populate application state.
+`App.jsx` is a root level component, which initializes appState as an observable object by MobX means. On it's componentWillMount we do several calls to service, to populate application state.
 
 ## Services
 * Fetch ( `services/api/Addon` )- for calls to our back-end, fetching information about subscriptions and connections, and also to update and delete subscriptions settings.
